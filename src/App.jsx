@@ -57,6 +57,11 @@ const App = () => {
             <li>City: {locationData.city}</li>
             <li>Latitude: {locationData.latitude}</li>
             <li>Longitude: {locationData.longitude}</li>
+            <li>Currency: {locationData.currency.currency_name}</li>
+            <li>Currency code: {locationData.currency.currency_code}</li>
+            <li>Postal code: {locationData.postal_code}</li>
+            <li>VPN Used: {locationData.security.is_vpn}</li>
+            <li>Current time: {locationData.timezone.current_time}</li>
             <li>
               Flag: <img src={locationData.flag.svg} alt="" />
             </li>
